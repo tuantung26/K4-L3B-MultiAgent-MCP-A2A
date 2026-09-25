@@ -1,0 +1,81 @@
+{
+  "schema_version": "day09-l3b-output-v2",
+  "case_id": "L3B_CASE_044",
+  "assessment": {
+    "primary_issue": "insufficient_evidence",
+    "secondary_issues": [
+      "requested_full_refund"
+    ],
+    "case_status": "needs_investigation",
+    "confidence": 0.1
+  },
+  "affected_entities": {
+    "order_ids": [],
+    "item_ids": [],
+    "seller_ids": [],
+    "payment_references": [],
+    "shipment_ids": []
+  },
+  "claim_assessments": [
+    {
+      "claim_id": "claim-044-a",
+      "verdict": "insufficient_evidence",
+      "confidence": 0.2,
+      "evidence_refs": []
+    },
+    {
+      "claim_id": "claim-044-b",
+      "verdict": "insufficient_evidence",
+      "confidence": 0.2,
+      "evidence_refs": []
+    }
+  ],
+  "entity_resolution": {
+    "status": "not_found",
+    "resolved_order_ids": [],
+    "rejected_candidates": [
+      "ded456690bcb2ffd4def86541479037f",
+      "candidate-044"
+    ],
+    "confidence": 0.1
+  },
+  "customer_context": {
+    "customer_unique_id": "customer-86541479037f",
+    "related_order_ids": []
+  },
+  "shipment_analysis": {
+    "verdict": "insufficient_evidence",
+    "late_seller_ids": [],
+    "timeline_complete": false
+  },
+  "payment_analysis": {
+    "verdict": "insufficient_evidence",
+    "captured_total_brl": null,
+    "refunded_total_brl": null,
+    "refundable_total_brl": null
+  },
+  "root_cause_analysis": {
+    "ranked_causes": [
+      {
+        "cause_code": "INSUFFICIENT_EVIDENCE",
+        "rank": 1
+      }
+    ],
+    "responsible_parties": [
+      {
+        "party_type": "unknown",
+        "party_id": null
+      }
+    ]
+  },
+  "evidence_refs": [],
+  "data_conflicts": [],
+  "financial_resolution": {
+    "currency": "BRL",
+    "recommended_refund_brl": 0,
+    "refund_lines": []
+  },
+  "resolution_actions": [
+    "Review evidence before final customer response"
+  ]
+}
